@@ -31,11 +31,10 @@ class CashRegister
     end
   end
   
+
   def void_last_transaction
     self.total = self.total - self.last_transaction
   end
-
-  def void_last_transaction
       self.total -= self.last_transaction.pop
   end
 end
